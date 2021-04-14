@@ -6,9 +6,14 @@ class Battle < Sinatra::Base
     register Sinatra::Reloader
   end
 
+  # get '/' do
+  #   'Hello Battle'
+  # end
+
   get '/' do
-    'Hello Battle'
+    'Testing infrastructure working!'
   end
 
   run! if app_file == $0
 end
+
